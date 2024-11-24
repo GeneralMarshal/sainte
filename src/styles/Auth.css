@@ -1,0 +1,147 @@
+.sainte-ban{
+   display: flex;
+   flex-direction: column;
+   background-color: black;
+   height: 100vh;
+   font-family: "Plus Jakarta Sans", sans-serif;
+}
+.people-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 126px 126px 126px;
+    grid-template-columns: 126px 126px 126px;
+    gap: 25px;
+    margin: 50px;
+}
+.people-pic{
+    border-radius: 50%;
+    background-color: grey;
+    overflow: hidden;
+}
+.people-pic img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.form-cont{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    overflow-y: auto ;
+}
+.form-nav{
+    display: flex;
+    gap: 18px;
+
+}
+.form-nav div{
+    width: 100%;
+    font-size:16px;
+    font-weight:600;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+
+}
+.form-nav span{
+    width: 100%;
+    height: 1px;
+    background-color: ;
+}
+.sign-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 75px 0 ;
+}
+.sign-btns div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 36px;
+    border-radius: 100px;
+    border: 1px solid #828282;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+}
+.sign-btns img{
+    height: 18px;
+}
+.in-form{
+    font-size: 16px;
+    font-weight: 400;
+}
+.fieldset{
+     gap: 18px;
+     display: flex;
+     flex-direction: column;
+     margin: 35px 0px;
+    animation-duration: 0.5s;
+
+
+}
+.slide-in{
+    animation-name: slide-in;
+}
+.slide-out{
+    animation-name: slide-out;
+}
+@keyframes slide-in{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slide-out{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.input-container label{
+    font-size: 18px;
+    
+}
+.input-container input{
+    padding: 12px 16px;
+    border-radius: 100px;
+    border: 1px solid #828282;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+}
+.input-wrapper-img{
+    height: 16px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%) translateY(5px);
+}
+.auth-btn{
+    font-size: 16px;
+    font-weight: 600;
+    background: #1c1c1c;
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid #828282;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .auth-page{
+        flex-wrap: wrap;
+    }
+}
+
