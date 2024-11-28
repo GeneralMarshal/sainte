@@ -47,7 +47,7 @@
 .form-nav span{
     width: 100%;
     height: 1px;
-    background-color: ;
+    
 }
 .sign-btns{
     display: flex;
@@ -144,4 +144,25 @@
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 768px){
+    
+}
+@media screen and (max-width: 640px){
 
+    .auth-page{
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-image: linear-gradient(to bottom,  rgba(62, 62, 62, 0.6) 1.6%, rgba(21, 21, 21, 0.9) 60%, rgba(0,0,0,1)); 
+    }
+    .form-cont{
+        height: 100vh;
+    }
+}

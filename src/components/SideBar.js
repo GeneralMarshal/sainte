@@ -1,13 +1,20 @@
 import "../styles/AdminDashboard.css";
+import { IoClose } from "react-icons/io5";
 
-export default function SideBar() {
+export default function SideBar(props) {
   return (
-    <div className="sidebar bg-[#1c1c1c] h-[100vh] overflow-y-auto">
-      <p className="sidebar-logo font-[700] text-[40px] text-[#3AE6BD]">
-        {" "}
+    <div
+      className={`sidebar  ${
+        props.sidebar ? "sidebar-in" : "sidebar-out"
+      } bg-[#1c1c1c] h-[100vh] overflow-y-auto`}
+    >
+      <p className="sidebar-logo flex justify-between items-center font-[700] text-[40px] text-[#3AE6BD]">
         Sainte
+        <IoClose
+          className=" mr-[10px] text-[25px] text-[#ffffff]"
+          onClick={props.toggleSidebar}
+        />
       </p>
-
       <div className=" user-avatar ">
         <div className="user-pic-div">
           <img
@@ -30,7 +37,7 @@ export default function SideBar() {
         Dashboard
       </div>
       <section className="side-nav flex flex-col gap-[45px] my-[60px]">
-        <div class="care">
+        <div className="care">
           <p className=" side-nav-h">CARE TEAM</p>
           <ul>
             <li>
@@ -47,7 +54,7 @@ export default function SideBar() {
             </li>
           </ul>
         </div>
-        <div class="analytics">
+        <div className="analytics">
           <p className=" side-nav-h">ANALYTICS</p>
           <ul>
             <li>
@@ -64,7 +71,7 @@ export default function SideBar() {
             </li>
           </ul>
         </div>
-        <div class="resources">
+        <div className="resources">
           <p className=" side-nav-h">RESOURCES</p>
           <ul>
             <li>

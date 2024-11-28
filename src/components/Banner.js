@@ -19,7 +19,8 @@ export default function Banner(){
 
 
     return (
-      <div className="sainte-ban  flex-[55%]   ">
+      <div className="sainte-ban  flex-[55%]  relative  ">
+        <div className="overlay"></div>
         <div className=" text-center mt-[50px]">
           <h1 className=" text-[64px] font-[700] text-[#3AE6BD]">Sainte</h1>
           <div className="people-grid">
