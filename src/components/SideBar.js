@@ -11,7 +11,7 @@ export default function SideBar(props) {
       <p className="sidebar-logo flex justify-between items-center font-[700] text-[40px] text-[#3AE6BD]">
         Sainte
         <IoClose
-          className=" mr-[10px] text-[25px] text-[#ffffff]"
+          className="toggle-icon invisible  mr-[10px] text-[25px] text-[#ffffff]"
           onClick={props.toggleSidebar}
         />
       </p>

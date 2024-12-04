@@ -1,6 +1,5 @@
 import "../styles/AdminDashboard.css";
-import { IoMdMenu } from "react-icons/io";
-import {useState} from "react"
+
 import {
   LineChart,
   Line,
@@ -19,8 +18,6 @@ import {
 
 export default function DashMain(props) {
 
-  const [inbox, setInbox] = useState(2)
-  const [notification, setNotification] = useState(6);
 
 
   const appointments = [
@@ -96,29 +93,8 @@ export default function DashMain(props) {
     },
   ];
   return (
-    <main className="dash-main bg-[#1c1c1c] h-[100vh] flex-1 overflow-y-auto">
-      <div className="nav flex items-center justify-between cursor-pointer">
-        <IoMdMenu className=" text-[20px]"  onClick={props.toggleSidebar}/>
-        <div className="notification flex justify-end gap-[10px]">
-          <div>
-            <img src="/dashboard-icons/envelope.svg" alt="" />
-            {inbox && inbox > 0 ? (
-              <span className="inbox-no bg-[#3ae6bd]">{inbox}</span>
-            ) : (
-              ""
-            )}
-          </div>
-          <div>
-            <img src="/dashboard-icons/bell.svg" alt="" />
-            {notification && notification > 0 ? (
-              <span className="not-no bg-[#828282]">{notification}</span>
-            ) : (
-              ""
-            )}
-          </div>
-        </div>
-      </div>
-
+    <main className="">
+      {/* <Header toggleSidebar={props.toggleSidebar} sidebar={props.sidebar}/> */}
       <div className="welcome">
         <p>Hey jane -</p>
         <span>here's what is happening today</span>

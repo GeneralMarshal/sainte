@@ -1,0 +1,53 @@
+.citizens{
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+.citizen-search img{
+    position: absolute;
+    margin-left: 16px;
+    margin-right: 10px;
+}
+/* .citizen-search input{
+    width: 100%;
+    border: 1px solid #828282;
+    height: 40px;
+    padding: 16px 16px 16px 44px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #1c1c1c;
+    color: #a1a1aa;
+    border-radius: 10px;   
+} */
+.citizen-main{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 29px auto;
+   
+}
+.citizen-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(171px, 171px));
+    gap: 40px;
+    justify-content: center;
+}
+.pagination{
+    display: flex;
+    gap:4px;
+}
+.page-no, .page-nav{
+    height: 32px;
+    width:32px;
+    border-radius: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    
+}
+.active-page{
+    border: 1px solid #828282;
+
+}
