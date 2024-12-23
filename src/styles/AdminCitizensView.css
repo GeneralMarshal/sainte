@@ -1,3 +1,103 @@
+.dash-main{
+    padding: 20px;
+}
+.citizens-view{
+        font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+.citizen-frame{
+    display: flex;
+    flex: 1;
+    flex-basis: 400px;
+    margin: 11px 26px 0 0  ;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #828282 ;
+    gap: 30px;
+}
+.is-verified{
+    font-weight: 600;
+    font-size: 16px;
+    color: #3ae6bd;
+}
+.citizen-active{
+    display: flex;
+    line-height: none;
+    align-items: flex-end;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 8px;
+}
+.citizen-active p{
+    font-size: 14px;
+}
 .citizen-frame button{
     display: flex;
+
+    align-items: center;
+    padding: 8px 16px 8px 12px;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 8px;
+    cursor: pointer;
+    width: 100px;
+    
+}
+.citizen-frame button img{
+    height: 24px;
+}
+.p-mentors, .p-officers{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(171px, 17px));
+    gap: 40px;
+    justify-content: center;
+}
+.peer-h{
+    display: grid;
+    grid-column: 1 / -1;
+    margin-bottom: -10px;
+}
+.react-data-table__header{
+    background-color: #ffffff;
+}
+.react-data-table__row{
+    background-color: black;
+}
+.appointments-graph{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #828282;
+    padding: 20px 20px 50px 10px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .citizen-frame{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:768px){
+    .citizen-frame{
+        margin: 11px 0 0 0  ;
+    }
+}
+@media screen and (max-width:640px){
+    .citizen-header {
+        font-size: 24px;
+    }
+    .is-verified{
+        font-size: 12px;
+    }
+    .appointment-info p{
+        font-size: 12px;
+    }
+    .citizen-active p{
+        font-size: 10px;
+    }
+    
 }
