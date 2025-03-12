@@ -1,7 +1,9 @@
-import "../styles/AdminDashboard.css";
 import { IoClose } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 export default function SideBar(props) {
+  const navigate = useNavigate();
+
   return (
     <div
       className={`sidebar  ${
@@ -28,7 +30,12 @@ export default function SideBar(props) {
           <p className=" user-email">jane.dow@example.com</p>
         </div>
       </div>
-      <div className="dash-btn">
+      <div
+        className={`dash-btn ${
+          props.activePage === "dashboard" ? " active-btn" : ""
+        }`}
+        onClick={() => navigate("/admindashboard")}
+      >
         <img
           src="/dashboard-icons/home.svg"
           alt=""
@@ -40,7 +47,10 @@ export default function SideBar(props) {
         <div className="care">
           <p className=" side-nav-h">CARE TEAM</p>
           <ul>
-            <li>
+            <li
+              className={props.activePage === "citizens" ? " active-btn" : ""}
+              onClick={() => navigate("/admincitizens")}
+            >
               <img src="/dashboard-icons/chart-bar.svg" alt="" />
               <p>Citizens</p>
             </li>
@@ -74,7 +84,12 @@ export default function SideBar(props) {
         <div className="resources">
           <p className=" side-nav-h">RESOURCES</p>
           <ul>
-            <li>
+            <li
+              className={`dash-btn ${
+                props.activePage === "blog" ? " active-btn" : ""
+              }`}
+              onClick={() => navigate("/adminblog")}
+            >
               <img src="/dashboard-icons/book.svg" alt="" />
               <p>Blog</p>
             </li>
@@ -83,7 +98,10 @@ export default function SideBar(props) {
       </section>
       <div className=" set-log">
         <ul>
-          <li>
+          <li
+            className={props.activePage === "settings" ? " active-btn" : ""}
+            onClick={() => navigate("/adminsettings")}
+          >
             <img src="/dashboard-icons/cog.svg" alt="" />
             <p>Settings</p>
           </li>

@@ -38,13 +38,17 @@
 }
 .dash-btn{
     height: 30px;
-    border: 1px solid #828282;
-    border-radius: 5px;
     display: flex;
     align-items: center;
     font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
 
+}
+.active-btn{
+    border: 1px solid #828282;
+    border-radius: 5px;
+    padding: 5px;
 }
 .side-nav-h{
     color: #aeaeae;

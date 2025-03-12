@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/AdminSettings.css"
 
 export default function Settings(){
   const [incidentText, setIncidentText] = useState("");
@@ -103,11 +104,11 @@ export default function Settings(){
           <form className=" support-form">
             <div>
               <label htmlFor="phone">Phone</label>
-              <input type="number" className="form-control w-full" placeholder="+2739131291709" />
+              <input type="number" className="form-control form-control-highlight" placeholder="+2739131291709" />
             </div>
             <div>
               <label htmlFor="phone">Email</label>
-              <input type="email" className="form-control w-full"  placeholder="support@mail.com"/>
+              <input type="email" className="form-control form-control-highlight"  placeholder="support@mail.com"/>
             </div>
             <div>
               <label htmlFor="ticket">Ticket</label>

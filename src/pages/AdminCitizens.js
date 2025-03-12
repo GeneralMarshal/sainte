@@ -4,7 +4,7 @@ import Citizens from "../components/Citizens";
 export default function(){
     return(
         <div className=" w-[100vw] flex">
-            <Layout>
+            <Layout activePage="citizens">
                 <Citizens/>
             </Layout>
         </div>

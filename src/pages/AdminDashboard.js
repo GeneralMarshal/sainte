@@ -11,7 +11,7 @@ export default function AdminDashboard(){
       
       <div className=" w-[100vw] flex">
 
-        <Layout>
+        <Layout activePage="dashboard">
           <DashMain/>
         </Layout>
       </div>

@@ -4,6 +4,7 @@ import AuthPage from './pages/AuthPage';
 import AdminCitizens from "./pages/AdminCitizens";
 import AdminCitizensView from "./pages/AdminCitizensView";
 import AdminSettings from "./pages/AdminSettings";
+import AdminBlog from "./pages/AdminBlog";
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path="/admincitizens" element={<AdminCitizens />} />
       <Route path="/admincitizensview" element={<AdminCitizensView />} />
       <Route path="/adminsettings" element={<AdminSettings/>}/>
+      <Route path="/adminblog" element={<AdminBlog/>} />
     </Routes>
   );
 }

@@ -4,7 +4,7 @@ import CitizensView from "../components/CitizensView"
 export default function AdminCitizensView(){
     return(
         <div className=" w-[100%] flex">
-            <Layout>
+            <Layout activePage="citizens">
                 <CitizensView/>
             </Layout>
         </div>
