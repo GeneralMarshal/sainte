@@ -93,3 +93,9 @@
     border-radius: 8px;
     color: #1c1c1c;
 }
+
+@media screen and (max-width:600px) {
+    .p-info-form, .support-form{
+        min-width: 300px;
+    }
+}
