@@ -10,7 +10,7 @@ export default function AuthForm() {
     setIsPassword((password) => !password);
   }
   function toggleRepeat() {
-    setIsRepeat((password) => !password);
+    setIsRepeat((password) => !password); 
   }
 
   return (

@@ -1,3 +1,9 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
 .sainte-ban{
    display: flex;
    flex-direction: column;
@@ -142,13 +148,18 @@
 @media screen and (max-width: 1024px) {
     .auth-page{
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 768px){
     
 }
 @media screen and (max-width: 640px){
-
+    .sainte-ban{
+        flex: 100%;
+        align-items: center;
+        overflow: hidden;
+    }
     .auth-page{
         overflow-x: hidden;
         justify-content: center;
